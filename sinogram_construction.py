@@ -43,6 +43,7 @@ sinogram_stack= np.zeros((N,L,M)) # N sinograms, each of L projections of M samp
 for n in np.arange(N):
     for l in np.arange(L):
         sinogram_stack[n,l,:]= proj[l,n,:]
-    
+
+plt.imsave('pictures/sinograms.tiff', sinogram_stack, bigtiff=True)
 # the sinogram stack is of dimensions(N,L,M) where N is the rows from the projections L that get stacked on
 # top of each other
