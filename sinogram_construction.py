@@ -20,7 +20,7 @@ for n in np.arange(temp1.shape[0]):
     
 data_names= np.char.chararray.tolist(np.char.add(temp3,np.char.add(temp1,temp2))) #list of names of projections
 
-proj = np.array(tiff.imread(data_names[0:36])) #reading projection data into 3d array
+proj = np.array(tiff.imread(data_names)) #reading projection data into 3d array
 
 
 
